@@ -10,30 +10,32 @@ pyramid-slide
 </header>
 
 <head>
-    <link rel="stylesheet" href="css/style.css" </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-        <div id="container">
-            <h1>Pyramid Slide</h1>
-            <div id="gameWindow">
-                <div id="controls">
-                    <form class="menu">
-                        <p>Brick Symbol:</p>
-                        <!-- The select event you care about is onchange. -->
+<body>
+    <div id="container">
+        <h1>Pyramid Slide</h1>
+        <div id="gameWindow">
+            <div id="controls">
+                <ul class="menu">
+                    <li>Brick Symbol:</li>
+                    <!-- The select event you care about is onchange. -->
+                    <li>
                         <select name="brick symbol" :>
                             <option value="#">#</option>
                             <option value="@">@</option>
                             <option value="X">X</option>
                             <option value="$">$</option>
-                        </select>
-                        <p class="slider">How High?</p>
-                        <input type="range" class="slider" oninput="myFunction(){script.js}">
-                    </form>
-                </div>
+                        </select></li>
+                    <li class="slider">How High? &nbsp;
+                        <input type="range" class="slider" oninput="myFunction(){script.js}"></li>
+                </ul>
             </div>
         </div>
-        <script>
-        </script>
-    </body>
+    </div>
+    <script>
+    </script>
+</body>
 
 </html>

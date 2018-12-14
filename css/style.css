@@ -8,7 +8,13 @@ pyramid-slide
 body {
     Font-family: "Courier New", Courier, monospace;
     position: absolute;
-    width: 90%;
+    width: 95%;
+}
+
+body {
+    Font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    width: 95%;
 }
 
 #container {
@@ -16,7 +22,49 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: whitesmoke;
-    width: 70%;
+    width: 90vw;
+}
+
+h1 {
+    margin-top: 5em;
+    text-align: center;
+    background-color: #c27099;
+    border-radius: 3px;
+    font-size: 1.6em;
+    padding: 1.5em;
+    color: white;
+}
+
+.controls {
+    position: absolute;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+#gameWindow {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #c27099;
+    background-color: #d9d9d9;
+}
+
+.slider {
+    float: right;
+    padding-left: 3em;
+}
+
+.menu p {
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 h1 {
@@ -39,7 +87,7 @@ td {
 }
 
 #gameWindow {
-    width: 80%;
+    width: 80vw;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #c27099;
@@ -48,7 +96,7 @@ td {
 
 .slider {
     float: right;
-    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .menu p {
