@@ -19,26 +19,24 @@ pyramid-slide
         <div id="gameWindow">
             <div id="controls">
                 <ul class="menu">
-                    <li class="bricks">Brick Symbol:</li>
+                    <li class="slider">How high?</li>
+                    <li class="bricks"><label>Brick Symbol:</label></li>
+                    <li class="slider"><input type="range" name="height" min="1" max="20" oninput="drawPyramid(height)"></li>
                     <!-- The select event you care about is onchange. -->
                     <li class="bricks">
-                        <select name="brick symbol" :>
-                            <option value="#">#</option>
-                            <option value="@">@</option>
-                            <option value="X">X</option>
-                            <option value="$">$</option>
+                        <select name="brick-symbol" :>
+                                <option value="#">#</option>
+                                <option value="@">@</option>
+                                <option value="X">X</option>
+                                <option value="$">$</option>
                         </select></li>
-                    <li class="slider">How High?</li>
-                    <li class="slider" input type="range"></li>
                 </ul>
             </div>
             <div id="pyramid_area">
-
             </div>
         </div>
     </div>
-    <script>
-    </script>
+    <script src="pyramid.js"></script>
 </body>
 
 </html>
