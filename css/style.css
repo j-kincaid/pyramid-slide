@@ -1,0 +1,57 @@
+/* 
+Jessica Kincaid
+Unit 3
+JavaScript
+pyramid-slide 
+*/
+
+body {
+    Font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    width: 90%;
+}
+
+#container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    width: 70%;
+}
+
+h1 {
+    margin-top: 5em;
+    text-align: center;
+    background-color: #c27099;
+    border-radius: 3px;
+    font-size: 1.6em;
+    padding: 1.5em;
+    color: white;
+}
+
+.controls {
+    position: absolute;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#gameWindow {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #c27099;
+    background-color: #d9d9d9;
+}
+
+.slider {
+    float: right;
+    padding-left: 3em;
+}
+
+.menu p {
+    padding-left: 3em;
+    padding-right: 3em;
+}
