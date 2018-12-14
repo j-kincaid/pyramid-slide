@@ -7,99 +7,96 @@ pyramid-slide
 
 body {
     Font-family: "Courier New", Courier, monospace;
-    position: absolute;
-    width: 95%;
 }
 
-body {
-    Font-family: "Courier New", Courier, monospace;
-    position: absolute;
-    width: 95%;
-}
 
-#container {
+/* ***********************************
+Child of body
+*********************************** */
+
+div#container {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: whitesmoke;
-    width: 90vw;
+    margin: auto;
+    background-color: rgb(233, 224, 224);
+    width: 85%;
 }
+
+
+/* ***********************************
+Pink child of div#container
+controls distance from top
+*********************************** */
 
 h1 {
     margin-top: 5em;
     text-align: center;
     background-color: #c27099;
+    padding: 7%;
     border-radius: 3px;
-    font-size: 1.6em;
-    padding: 1.5em;
+    font-size: 1.5em;
     color: white;
 }
 
-.controls {
+
+/* ***********************************
+Child of div#container
+box with tiny pink border
+*********************************** */
+
+div#gameWindow {
     position: absolute;
-    text-align: center;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: 6%;
+    border: 2px solid #c27099;
+    border-radius: 1%;
+    background-color: whitesmoke;
 }
 
-td {
+
+/* ***********************************
+Light gray dropdown and slider controls 
+*********************************** */
+
+div#controls {
+    margin: 0;
+    margin-top: -1em;
+    height: 14vw;
     text-align: center;
+    background-color: lightgray;
+}
+
+ul.menu {
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 ul li {
+    text-align: center;
     list-style: none;
     display: inline;
+    margin-top: 2em;
 }
 
-#gameWindow {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #c27099;
-    background-color: #d9d9d9;
+li.bricks {
+    float: left;
 }
 
-.slider {
+li.slider {
     float: right;
-    padding-left: 3em;
 }
 
-.menu p {
-    padding-left: 3em;
-    padding-right: 3em;
+
+/* ***********************************
+Whitesmoke area child of gameWindow 
+Housing pyramid 
+*********************************** */
+
+div#pyramid_area {
+    height: 50vw;
+    background-color: whitesmoke;
 }
 
-h1 {
-    margin-top: 5em;
-    text-align: center;
-    background-color: #c27099;
-    border-radius: 3px;
-    font-size: 1.6em;
-    padding: 1.5em;
-    color: white;
-}
-
-.controls {
-    position: absolute;
-    text-align: center;
-}
-
-td {
-    text-align: center;
-}
-
-#gameWindow {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #c27099;
-    background-color: #d9d9d9;
-}
-
-.slider {
-    float: right;
-    padding-right: 3em;
-}
-
-.menu p {
-    padding-left: 3em;
-    padding-right: 3em;
+.brick-symbol {
+    color: #c27099;
 }
