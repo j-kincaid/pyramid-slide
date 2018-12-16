@@ -6,8 +6,6 @@ pyramid-slide
 -->
 
 <html>
-<header>
-</header>
 
 <head>
     <link rel="stylesheet" href="css/style.css">
@@ -17,11 +15,6 @@ pyramid-slide
 
     <!-- TODO: -->
 
-    <!-- 1. input with type="range" and slider event oninput -->
-
-    <!-- 2. dropdown menu <select> element with option events nested inside. -->
-
-    <!-- 3. You care about the select event onchange -->
 
 
     <div id="container">
@@ -30,6 +23,7 @@ pyramid-slide
             <div id="controls">
                 <ul class="menu">
                     <li class="bricks">Brick Symbol:</li>
+                    <!-- 2. dropdown menu <select> element with option events nested inside. -->
                     <!-- The select event you care about is onchange. -->
                     <li class="bricks">
                         <select name="brick-symbol" :>
@@ -38,13 +32,16 @@ pyramid-slide
                                 <option value="X">X</option>
                                 <option value="$">$</option>
                         </select></li>
-                    <!-- <span id="height">2<input type="range" min="2" max="20" id="slider">20</span> -->
-                    <!-- <li class="slider"><input type="range" name="height" min="1" max="20" oninput="drawPyramid(height)"></li> -->
+                    <!--  -->
 
+                    <!-- 1. input with type="range" and slider event oninput -->
                     <li>How high?
-                        <p><strong><input type="range" min="2" max="20" id="slider" id="height"></strong>
+                        <p><strong><span id="height"><input type="range" min="2" max="20" onchange="drawPyramid()"></span></strong>
                         </p>
                     </li>
+
+
+                    <!-- 3. You care about the select event onchange -->
 
                 </ul>
             </div>
