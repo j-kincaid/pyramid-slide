@@ -93,7 +93,7 @@ Whitesmoke area child of gameWindow
 Housing pyramid 
 *********************************** */
 
-div#pyramid_area {
+div#pyramid {
     height: 50vw;
     background-color: whitesmoke;
 }
