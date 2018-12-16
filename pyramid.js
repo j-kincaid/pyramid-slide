@@ -1,77 +1,43 @@
+// Jessica Kincaid
+// Unit 3
+// JavaScript
+// pyramid-slide 
+
+
+
 var heightElem = document.getElementById("height");
 var formElem = document.getElementById("pyramid");
 
 
-// md = false;
-// document.getElementById('slider').addEventListener('mouseup', function() {
-//     md = false;
-// });
-// document.getElementById('slider').addEventListener('mousedown', function() {
-//     //md=true;
-// });
-// document.getElementById('slider').addEventListener('mousemove', function() {
-//     drawPyramid();
-// });
-// drawPyramid();
-// set a handler function for the form's submission event
-formElem.onsubmit = function(event) {
+// draw pyramid with the specified height
+drawPyramid(height);
+}
+/**
+ * determineHeightAndThenDrawPyramid
+ *
+ * Determines the current value that the user has typed in the 'How high?' text-box,
+ * and then draws a pyramid with that height.
+//  */
+function determineHeightAndThenDrawPyramid() {
 
-        // QUIZ
-        // what happens if we don't do this?
-        event.preventDefault();
+    //     // just so we know we're here
+    console.log("someone invoked the determineHeightAndThenDrawPyramid function!");
 
-        // QUIZ
-        // what happens if we don't do this?
-        clearError();
+    //     // TODO 3
+    //     // figure out the height the user typed (replace the "5" below)
 
-        // figure out the height the user typed
-        heightStr = heightElem.value;
-
-        // TODO 1
-        // if they didn't type anything at all, give a different error message,
-        // something like "Please provide a height"
+    var heightInput = document.getElementById("height")
+    heightStr = heightInput.value
 
 
-        // convert the string to an int
-        height = parseInt(heightStr);
+    //     // here we convert the string to an int
+    height = parseInt(heightStr);
 
-        // if the height is not-a-number, yell at them and exit early
-        // TODO 2
-        // negative numbers and zero should also be rejected here
-        // if (isNaN(height)) {
-        //     displayError("That's not a valid height.");
-        //     return;
-        // }
+    //     // TODO 2
+    //     // draw the pyramid with the given height
+    drawPyramid(height)
 
-        // draw pyramid with the specified height
-        drawPyramid(height);
-    }
-    /**
-     * determineHeightAndThenDrawPyramid
-     *
-     * Determines the current value that the user has typed in the 'How high?' text-box,
-     * and then draws a pyramid with that height.
-    //  */
-    // function determineHeightAndThenDrawPyramid() {
-
-//     // just so we know we're here
-//     console.log("someone invoked the determineHeightAndThenDrawPyramid function!");
-
-//     // TODO 3
-//     // figure out the height the user typed (replace the "5" below)
-
-//     var heightInput = document.getElementById("height")
-//     heightStr = heightInput.value
-
-
-//     // here we convert the string to an int
-//     height = parseInt(heightStr);
-
-//     // TODO 2
-//     // draw the pyramid with the given height
-//     drawPyramid(height)
-
-// }
+}
 
 
 // TODO 1
