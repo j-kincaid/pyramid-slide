@@ -5,10 +5,27 @@
 
 var heightElem = document.getElementById("height");
 // from range input 
-var formElem = document.getElementById("draw-form");
+var formElem = document.getElementById("pyramid");
 
-// I need an event handler for the slider input
+// Mouse event handler for the slider input
+md = false;
+document.getElementById("height").addEventListener("mouseup", function() {
+    md = false;
+});
+document.getElementById("height").addEventListener("mousedown", function() {
+    //md=true;
+});
+document.getElementById("height").addEventListener("mousemove", function() {
+    drawPyramid();
+});
 
+drawPyramid();
+
+// Change characters in bricks menu
+// function pyrChar() {
+//     var x = document.getElementById("brick-symbol").value;
+//     document.getElementById("bricks").innerHTML = "option value= " + x;
+// }
 // draw pyramid with the specified height
 
 function drawPyramid(height) {
@@ -39,29 +56,3 @@ function drawPyramid(height) {
         document.getElementById("pyramid").appendChild(rowElem);
     }
 }
-
-// Change characters in bricks menu
-function pyrChar() {
-    var x = document.getElementById("brick-symbol").value;
-    document.getElementById("bricks").innerHTML = "option value= " + x;
-}
-
-/**
- * determineHeightAndThenDrawPyramid
- *
- * Determines the current value that the user has typed in the 'How high?' text-box,
- * and then draws a pyramid with that height.
-// //  */
-// function determineHeightAndThenDrawPyramid() {
-
-//     var heightInput = document.getElementById("height");
-//     heightStr = heightInput.value
-
-//     //     // TODO 2
-//     //     // draw the pyramid with the given height
-
-
-//     // TODO 1
-//     // hook up the button's click event to our determineHeightAndThenDrawPyramid function
-//     var slider = document.getElementById("slider")[0]
-//     slider.addEventListener("mouseup", determineHeightAndThenDrawPyramid)
