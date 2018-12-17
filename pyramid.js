@@ -9,13 +9,13 @@ var formElem = document.getElementById("menu");
 
 // Mouse event handler for the slider input
 md = false;
-document.getElementById("height").addEventListener("mouseup", function() {
+heightElem.addEventListener("mouseup", function() {
     md = false;
 });
-document.getElementById("height").addEventListener("mousedown", function() {
+heightElem.addEventListener("mousedown", function() {
     //md=true;
 });
-document.getElementById("height").addEventListener("mousemove", function() {
+heightElem.addEventListener("mousemove", function() {
     drawPyramid();
 });
 
