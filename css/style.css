@@ -97,6 +97,9 @@ Housing pyramid
 div#pyramid {
     height: 50vw;
     background-color: whitesmoke;
+    color: #c27099;
+    line-height: 0;
+    font-size: 30px;
 }
 
 .brick-symbol {

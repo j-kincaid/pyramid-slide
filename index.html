@@ -12,11 +12,6 @@ pyramid-slide
 </head>
 
 <body>
-
-    <!-- TODO: -->
-
-
-
     <div id="container">
         <h1>Pyramid Slide</h1>
         <div id="gameWindow">
@@ -26,26 +21,25 @@ pyramid-slide
                     <!-- 2. dropdown menu <select> element with option events nested inside. -->
                     <!-- The select event you care about is onchange. -->
                     <li class="bricks">
-                        <select name="brick-symbol" :>
+                        <select id="brick-symbol" onchange="pyrChar()" :>
                                 <option value="#">#</option>
                                 <option value="@">@</option>
                                 <option value="X">X</option>
                                 <option value="$">$</option>
                         </select></li>
-                    <!--  -->
 
                     <!-- 1. input with type="range" and slider event oninput -->
                     <li>How high?
-                        <p><strong><span id="height"><input type="range" min="2" max="20" onchange="drawPyramid()"></span></strong>
+                        <p><strong><span ><input type="range" min="2" max="20" id="height" oninput="drawPyramid()"></span></strong>
                         </p>
                     </li>
 
-
-                    <!-- 3. You care about the select event onchange -->
+                    <!-- 3. Use the select event onchange with the dropdown character choices. -->
 
                 </ul>
             </div>
             <div id="pyramid">
+
             </div>
         </div>
     </div>

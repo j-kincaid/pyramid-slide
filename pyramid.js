@@ -4,8 +4,10 @@
 // pyramid-slide 
 
 var heightElem = document.getElementById("height");
+// from range input 
 var formElem = document.getElementById("draw-form");
 
+// I need an event handler for the slider input
 
 // draw pyramid with the specified height
 
