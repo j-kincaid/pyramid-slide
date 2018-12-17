@@ -3,25 +3,25 @@
 // JavaScript
 // pyramid-slide 
 
-var heightElem = document.getElementById("height");
+var heightElem = document.getElementById("height").value;
 // from range input 
 var formElem = document.getElementById("menu");
 
 // Mouse event handler for the slider input
-md = false;
-heightElem.addEventListener("mouseup", function() {
-    md = false;
-});
-heightElem.addEventListener("mousedown", function() {
-    //md=true;
-});
-heightElem.addEventListener("mousemove", function() {
-    drawPyramid();
-});
+// md = false;
+// heightElem.addEventListener("mouseup", function() {
+//     md = false;
+// });
+// heightElem.addEventListener("mousedown", function() {
+//     //md=true;
+// });
+// heightElem.addEventListener("mousemove", function() {
+//     drawPyramid();
+// });
 
-drawPyramid();
+// drawPyramid();
 
-Change characters in bricks menu
+// Change characters in bricks menu
 
 function pyrChar() {
     var x = document.getElementById("brick-symbol").value;
@@ -33,6 +33,7 @@ function pyrChar() {
 function drawPyramid(height) {
 
     // first, clear the old content
+    //    
     document.getElementById("pyramid").innerHTML = "";
 
     // for each row....
