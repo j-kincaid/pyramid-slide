@@ -7,20 +7,6 @@ var heightElem = document.getElementById("height").value;
 // from range input 
 var formElem = document.getElementById("menu");
 
-// Mouse event handler for the slider input
-// md = false;
-// heightElem.addEventListener("mouseup", function() {
-//     md = false;
-// });
-// heightElem.addEventListener("mousedown", function() {
-//     //md=true;
-// });
-// heightElem.addEventListener("mousemove", function() {
-//     drawPyramid();
-// });
-
-// drawPyramid();
-
 // Change characters in bricks menu
 
 function pyrChar() {
