@@ -5,7 +5,7 @@
 
 var heightElem = document.getElementById("height");
 // from range input 
-var formElem = document.getElementById("pyramid");
+var formElem = document.getElementById("menu");
 
 // Mouse event handler for the slider input
 md = false;
@@ -26,6 +26,7 @@ drawPyramid();
 //     var x = document.getElementById("brick-symbol").value;
 //     document.getElementById("bricks").innerHTML = "option value= " + x;
 // }
+
 // draw pyramid with the specified height
 
 function drawPyramid(height) {

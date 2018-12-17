@@ -16,7 +16,7 @@ pyramid-slide
         <h1>Pyramid Slide</h1>
         <div id="gameWindow">
             <div id="controls">
-                <ul class="menu">
+                <ul id="menu">
                     <li class="bricks">Brick Symbol:</li>
                     <!-- Use the select event onchange with the dropdown character choices. -->
                     <li class="bricks">
@@ -31,7 +31,7 @@ pyramid-slide
 
                     <li>
                         <label>How high?
-                        <p><strong><input type="range" min="2" max="20" id="height"></strong></p>
+                        <p><strong><input type="range" min="2" max="20" id="height" value="Draw a pyramid" oninput="drawPyramid(height)"></strong></p>
                         </label>
                     </li>
                 </ul>
