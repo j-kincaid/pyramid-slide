@@ -17,10 +17,10 @@ pyramid-slide
         <div id="gameWindow">
             <div id="controls">
                 <ul id="menu">
-                    <li class="bricks">Brick Symbol:</li>
-                    <!-- Use the select event onchange with the dropdown character choices. -->
-                    <li class="bricks">
-                        <select id="brick-symbol" :>
+                    <li class="bricks">Brick Symbol:
+                        <!-- Use the select event onchange with the dropdown character choices. -->
+
+                        <select id="brick-symbol" onchange="function pyrChar()" :>
                                 <option value="#">#</option>
                                 <option value="@">@</option>
                                 <option value="X">X</option>
