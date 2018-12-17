@@ -3,10 +3,6 @@
 // JavaScript
 // pyramid-slide 
 
-var heightElem = document.getElementById("height").value;
-// from range input 
-var formElem = document.getElementById("menu");
-
 // Change characters in bricks menu
 
 function pyrChar() {
@@ -14,9 +10,26 @@ function pyrChar() {
     document.getElementById("bricks").innerHTML = "option value= " + x;
 }
 
+md = false;
+document.getElementById('slider').addEventListener('mouseup', function() {
+    md = false;
+});
+document.getElementById('slider').addEventListener('mousedown', function() {
+    //md=true;
+});
+document.getElementById('slider').addEventListener('mousemove', function() {
+    makePyramid();
+});
+makePyramid();
+
+var heightElem = document.getElementById("height").value;
+// from range input 
+var formElem = document.getElementById("menu");
+
+
 // draw pyramid with the specified height
 
-function drawPyramid(height) {
+function drawPyramid() {
 
     // first, clear the old content
     //    

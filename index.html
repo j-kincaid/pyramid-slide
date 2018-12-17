@@ -8,6 +8,7 @@ pyramid-slide
 <html>
 
 <head>
+    <title>Pyramid Slide</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,31 +16,34 @@ pyramid-slide
     <div id="container">
         <h1>Pyramid Slide</h1>
         <div id="gameWindow">
-            <div id="controls">
-                <ul id="menu">
-                    <li class="bricks">Brick Symbol:</li>
-                    <!-- Use the select event onchange with the dropdown character choices. -->
-                    <li>
-                        <select id="brick-symbol" onchange="function pyrChar()">
-                                <option value="#">#</option>
-                                <option value="@">@</option>
-                                <option value="X">X</option>
-                                <option value="$">$</option>
-                        </select></li>
-
-                    <!--  input with type="range" and slider event oninput -->
-
-                    <li>
-                        <label>How high?
-                        <strong><input type="range" min="2" max="20" id="height" oninput="drawPyramid()"></strong>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div id="pyramid">
-
-            </div>
+            <form id="controls">
+                <label for id="brick-symbol">
+                    <h1 id="bricks">Brick Symbol:</h1>
+                        <!-- Use the select event onchange  -->
+                        <select onchange="pyrChar()">
+                            <option value="#">#</option>
+                            <option value="@">@</option>
+                            <option value="X">X</option>
+                            <option value="$">$</option>
+                        </select> 
+                </label>
+                <!--  input with type="range" and slider event oninput -->
+                <label for="height">How high?
+                    <span id="height"><b><input id="slider" type="range" min="2" max="20"  oninput="drawPyramid(x)"></b></span>
+                </label>
+            </form>
         </div>
+
+
+
+
+
+
+
+
+        <div id="pyramid">
+        </div>
+    </div>
     </div>
     <script src="pyramid.js"></script>
 </body>
