@@ -6,21 +6,10 @@
 // Change characters in bricks menu
 
 function pyrChar() {
-    var x = document.getElementById("brick-symbol").value;
+    var x = document.getElementById("symbol").value;
     document.getElementById("bricks").innerHTML = "option value= " + x;
 }
 
-md = false;
-document.getElementById('slider').addEventListener('mouseup', function() {
-    md = false;
-});
-document.getElementById('slider').addEventListener('mousedown', function() {
-    //md=true;
-});
-document.getElementById('slider').addEventListener('mousemove', function() {
-    makePyramid();
-});
-makePyramid();
 
 var heightElem = document.getElementById("height").value;
 // from range input 

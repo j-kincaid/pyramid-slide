@@ -5,103 +5,53 @@ JavaScript
 pyramid-slide 
 */
 
-* {
+body {
     Font-family: "Courier New", Courier, monospace;
+    position: absolute;
+    width: 90%;
 }
 
-
-/* ***********************************
-Child of body
-*********************************** */
-
-div#container {
+#container {
     display: block;
-    margin: auto;
-    background-color: rgb(233, 224, 224);
-    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    width: 70%;
 }
-
-
-/* ***********************************
-Pink child of div#container
-controls distance from top
-*********************************** */
 
 h1 {
     margin-top: 5em;
     text-align: center;
     background-color: #c27099;
-    padding: 7%;
     border-radius: 3px;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    padding: 1.5em;
     color: white;
 }
 
-
-/* ***********************************
-Child of div#container
-box with tiny pink border
-*********************************** */
-
-div#gameWindow {
+.controls {
     position: absolute;
-    width: 70%;
-    height: auto;
-    ;
-    margin-top: 1%;
-    margin-left: 6%;
-    border: 2px solid #c27099;
-    border-radius: 1%;
-    background-color: whitesmoke;
-}
-
-
-/* ***********************************
-Light gray dropdown and slider controls 
-*********************************** */
-
-div#controls {
-    margin: 0;
-    margin-top: -1em;
-    height: 14vw;
     text-align: center;
-    background-color: lightgray;
 }
 
-span {
-    font-weight: bold;
+td {
+    text-align: center;
 }
 
-ul#menu {
+#gameWindow {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #c27099;
+    background-color: #d9d9d9;
+}
+
+.slider {
+    float: right;
+    padding-left: 3em;
+}
+
+.menu p {
     padding-left: 3em;
     padding-right: 3em;
-}
-
-ul li {
-    text-align: center;
-    list-style: none;
-    display: inline;
-    margin-top: 2em;
-}
-
-li.bricks {
-    float: left;
-}
-
-
-/* ***********************************
-Whitesmoke area child of gameWindow 
-Housing pyramid 
-*********************************** */
-
-div#pyramid {
-    height: 50vw;
-    background-color: whitesmoke;
-    color: #c27099;
-    line-height: 0;
-    font-size: 30px;
-}
-
-p#pyramid {
-    color: #c27099;
 }
