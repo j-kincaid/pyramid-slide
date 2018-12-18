@@ -6,8 +6,8 @@
 // Change characters in bricks menu
 
 function pyrChar() {
-    var x = document.getElementById("symbol").value;
-    document.getElementById("bricks").innerHTML = "option value= " + x;
+    var brickUnit = getElementById("symbol").value;
+    document.getElementById("hash").innerHTML = brickUnit;
 }
 
 
@@ -18,7 +18,7 @@ var formElem = document.getElementById("menu");
 
 // draw pyramid with the specified height
 
-function drawPyramid() {
+function drawPyramid(height) {
 
     // first, clear the old content
     //    

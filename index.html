@@ -17,31 +17,30 @@ pyramid-slide
         <h1>Pyramid Slide</h1>
         <div id="gameWindow">
             <div id="controls">
-                <nav id="symbol">
-                    <label id="bricks">Brick Symbol:</label>
-                    <!-- Use the select event onchange  -->
-                    <select onchange="pyrChar()">
-                            <option value="#">#</option>
-                            <option value="@">@</option>
-                            <option value="X">X</option>
-                            <option value="$">$</option>
-                    </select>
-                </nav>
-                <!--  input with type="range" and slider event oninput -->
-                <label for="height">How high?
-                    <span id="height"><b><input id="slider" type="range" min="2" max="20"  oninput="drawPyramid(x)"></b></span>
+                <nav id="menu">
+                    <ul>
+                        <li>Brick Symbol:</li>
+                        <li id="hash"><select id="symbol" onchange="pyrChar()">
+                                        <option value="#">#</option>
+                                        <option value="@">@</option>
+                                        <option value="X">X</option>
+                                        <option value="$">$</option>
+                            </select>
+                        </li>
+                        <li>
+                            <!--  input with type="range" and slider event oninput -->
+                            <label for="height">How high?
+                    <span id="height"><b><input id="slider" type="range" min="2" max="20" oninput="drawPyramid(x)"></b></span>
                 </label>
-                </form>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-
-
-
-
-
-
-
             <div id="pyramid">
+                <div id="hash">
+
+                </div>
             </div>
         </div>
     </div>
