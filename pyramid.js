@@ -5,7 +5,7 @@
 
 var heightElem = document.getElementById("height").value;
 // from range input 
-var formElem = document.getElementById("menu");
+var formElem = document.getElementById("controls");
 
 // Change characters in bricks menu
 
@@ -15,9 +15,7 @@ function pyrChar() {
 }
 
 formElem.oninput = function(event) {
-
-    event.preventDefault();
-
+    drawPyramid(height);
 }
 
 
