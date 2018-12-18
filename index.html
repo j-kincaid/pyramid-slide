@@ -20,7 +20,8 @@ pyramid-slide
                 <nav id="menu">
                     <ul>
                         <li>Brick Symbol:</li>
-                        <li id="hash"><select id="symbol" onchange="pyrChar()">
+                        <li id="hash">
+                            <select id="symbol" onchange="pyrChar()">
                                         <option value="#">#</option>
                                         <option value="@">@</option>
                                         <option value="X">X</option>
@@ -30,7 +31,7 @@ pyramid-slide
                         <li>
                             <!--  input with type="range" and slider event oninput -->
                             <label for="height">How high?
-                    <span id="height"><b><input id="slider" type="range" min="2" max="20" oninput="drawPyramid(x)"></b></span>
+                    <span id="height"><b><input id="slider" type="range" min="2" max="20" oninput="drawPyramid()"></b></span>
                 </label>
                         </li>
                     </ul>
@@ -38,9 +39,7 @@ pyramid-slide
             </div>
 
             <div id="pyramid">
-                <div id="hash">
-
-                </div>
+                <p id="hash"></p>
             </div>
         </div>
     </div>
