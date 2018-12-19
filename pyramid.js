@@ -30,6 +30,8 @@ function drawPyramid(height) {
     // for each row....
     for (var row = 0; row < height; row++) {
 
+        "use strict;"
+
         // figure out number of bricks and spaces
         var numBricks = row + 2;
         var numSpaces = height - row - 1;
