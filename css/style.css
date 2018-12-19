@@ -83,18 +83,7 @@ td {
 div#pyramid {
     height: 50vw;
     background-color: whitesmoke;
-    line-height: 0;
-    font-size: 30px;
-}
-
-div#hash {
-    height: 49vw;
-    background-color: whitesmoke;
     color: #c27099;
     line-height: 0;
     font-size: 30px;
-}
-
-p#hash {
-    color: #c27099;
 }

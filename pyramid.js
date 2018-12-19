@@ -10,7 +10,7 @@ var formElem = document.getElementById("controls");
 // Change characters in bricks menu
 
 function pyrChar() {
-    var hash = document.getElementById("symbol").value;
+    let hash = document.getElementById("symbol").value;
     document.getElementById("pyramid").innerHTML = hash;
     document.getElementById("pyramid").style.color = "#c27099";
 }
@@ -24,7 +24,7 @@ formElem.oninput = function(event) {
 
 function drawPyramid(height) {
 
-    rowElem = document.getElementById("slider").value;
+    rowElem = document.getElementById("height").value;
     document.getElementById("pyramid").innerHTML = rowElem;
 
     // first, clear the old content
