@@ -21,12 +21,6 @@ pyramid-slide
                     <!-- Your dropdown symbol selector part of your html file needs to take the variable of value of the symbol to maintain the symbol as you slide the slider something like this.  this is from my code when I did this project so don't be confused by the name of the functions.
                     `<select id="symbolSelect" onchange="findUserEntry(value)">` 
                     Your draw pyramid function needs to take in two variables. height and symbol -->
-
-                    <label>How high?
-                            <span id="slider"><b><input type="range" id="height" min="2" max="20" oninput="drawPyramid(height)"></b></span>
-                            <!-- inside the range slider element in the html file, when user moves slider, onchange calls pyChar function. It is called with the current value of the range slider passed in. Then also on the range slider element there's an oninput that calls another function that updates the numbers of the range slider. -->
-                        </label>
-
                     <label id="hash">Brick Symbol:
                             <select id="symbol" onchange="pyrChar(symbol)">  <!-- This function will take the value from the range slider and calls the draw pyramid function with that number for height. It also finds what symbol the user has selected. So when it calls drawPyramid it calls it with `height` and `symbol` -->
                                 <option value="#">#
@@ -34,6 +28,10 @@ pyramid-slide
                                 <option value="X">X
                                 <option value="$">$
                             </select>
+                        </label>
+                    <label>How high?
+                            <span id="slider"><b><input type="range" id="height" min="2" max="20" oninput="drawPyramid(height)"></b></span>
+                            <!-- inside the range slider element in the html file, when user moves slider, onchange calls pyChar function. It is called with the current value of the range slider passed in. Then also on the range slider element there's an oninput that calls another function that updates the numbers of the range slider. -->
                         </label>
                 </nav>
             </form>
