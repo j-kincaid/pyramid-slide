@@ -15,14 +15,13 @@ function pyrChar() {
     document.getElementById("pyramid").style.color = "#c27099";
 }
 
-formElem.oninput = function(event) {
-    drawPyramid(height);
-}
-
-
 // draw pyramid with the specified height
 
-function drawPyramid(height) {
+function drawPyramid(height, symbol) {
+
+
+    document.getElementById("symbol").addEventListener(height, symbol);
+
 
     rowElem = document.getElementById("height").value;
     document.getElementById("pyramid").innerHTML = rowElem;

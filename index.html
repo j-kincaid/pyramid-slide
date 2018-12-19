@@ -18,10 +18,13 @@ pyramid-slide
         <div id="gameWindow">
             <div id="controls">
                 <nav id="menu">
+                    <!-- Your dropdown symbol selector part of your html file needs to take the variable of value of the symbol to maintain the symbol as you slide the slider something like this.  this is from my code when I did this project so don't be confused by the name of the functions.
+                        `<select id="symbolSelect" onchange="findUserEntry(value)">` 
+                            Your draw pyramid function needs to take in two variables. height and symbol -->
                     <ul>
                         <li>Brick Symbol:</li>
                         <li id="hash">
-                            <select id="symbol" onchange="pyrChar()">
+                            <select id="symbol" onchange="pyrChar(value)">
                                 <option value="#">#
                                 <option value="@">@
                                 <option value="X">X
@@ -31,7 +34,7 @@ pyramid-slide
                         <li>
                             <!--  input with type="range" and slider event oninput -->
                             <label for="height">How high?</label>
-                            <span id="slider"><b><input id="height" type="range" min="2" max="20" oninput="drawPyramid()"></b></span>
+                            <span id="slider"><b><input id="height" type="range" min="2" max="20" oninput="drawPyramid(height, symbol)"></b></span>
                             </label>
                         </li>
                     </ul>
