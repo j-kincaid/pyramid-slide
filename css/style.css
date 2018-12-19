@@ -49,7 +49,7 @@ div#gameWindow {
 
 /* ************* Light gray dropdown and slider controls *************** */
 
-div#controls {
+form#controls {
     margin: 0;
     height: 14vw;
     text-align: center;
@@ -58,10 +58,6 @@ div#controls {
 
 nav#symbol {
     display: inline;
-}
-
-nav ul li {
-    list-style: none;
 }
 
 span {

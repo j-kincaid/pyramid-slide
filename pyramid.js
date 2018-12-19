@@ -3,25 +3,26 @@
 // JavaScript
 // pyramid-slide 
 
-var heightElem = document.getElementById("height").value;
-// from range input 
+//****************** Global variables ***************/
+var heightElem = document.getElementById("height").value; // from range input 
 var formElem = document.getElementById("controls");
 
-// Change characters in bricks menu
 
 function pyrChar() {
-    let hash = document.getElementById("symbol").value;
+    var hash = document.getElementById("symbol").value;
     document.getElementById("pyramid").innerHTML = hash;
-    document.getElementById("pyramid").style.color = "#c27099";
 }
+
+
+// set a handler function for the form's submission event
+formElem.onchange = function(event) {
+
+    }
+    // Change characters in bricks menu
 
 // draw pyramid with the specified height
 
 function drawPyramid(height, symbol) {
-
-
-    document.getElementById("symbol").addEventListener(height, symbol);
-
 
     rowElem = document.getElementById("height").value;
     document.getElementById("pyramid").innerHTML = rowElem;
@@ -31,9 +32,7 @@ function drawPyramid(height, symbol) {
     // document.getElementById("pyramid").innerHTML = "";
 
     // for each row....
-    for (var row = 0; row < height; row++) {
-
-        "use strict;"
+    for (var rowElem = 0; rowElem < height; row++) {
 
         // figure out number of bricks and spaces
         var numBricks = row + 2;
@@ -54,4 +53,6 @@ function drawPyramid(height, symbol) {
         rowElem.innerHTML = rowStr;
         document.getElementById("pyramid").appendChild(rowElem);
     }
+
+
 }
