@@ -3,7 +3,7 @@
 // JavaScript
 // pyramid-slide 
 
-//****************** Global variables ***************/
+
 var heightElem = document.getElementById("height").value; // from range input 
 var formElem = document.getElementById("controls");
 
@@ -24,12 +24,10 @@ formElem.onchange = function(event) {
 
 function drawPyramid(height, symbol) {
 
+    document.getElementById("height").innerHTML = numSpaces;
+
     rowElem = document.getElementById("height").value;
     document.getElementById("pyramid").innerHTML = rowElem;
-
-    // first, clear the old content
-    //    
-    // document.getElementById("pyramid").innerHTML = "";
 
     // for each row....
     for (var rowElem = 0; rowElem < height; row++) {
