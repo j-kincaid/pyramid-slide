@@ -10,8 +10,8 @@ var formElem = document.getElementById("controls");
 // Change characters in bricks menu
 
 function pyrChar() {
-    var brickUnit = getElementById("symbol").value;
-    document.getElementById("hash").innerHTML = brickUnit;
+    var hash = document.getElementById("symbol").value;
+    document.getElementById("pyramid").innerHTML = hash;
 }
 
 formElem.oninput = function(event) {
