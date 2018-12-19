@@ -12,6 +12,7 @@ var formElem = document.getElementById("controls");
 function pyrChar() {
     var hash = document.getElementById("symbol").value;
     document.getElementById("pyramid").innerHTML = hash;
+    document.getElementById("pyramid").style.color = "#c27099";
 }
 
 formElem.oninput = function(event) {
@@ -23,9 +24,12 @@ formElem.oninput = function(event) {
 
 function drawPyramid(height) {
 
+    rowElem = document.getElementById("slider").value;
+    document.getElementById("pyramid").innerHTML = rowElem;
+
     // first, clear the old content
     //    
-    document.getElementById("pyramid").innerHTML = "";
+    // document.getElementById("pyramid").innerHTML = "";
 
     // for each row....
     for (var row = 0; row < height; row++) {
