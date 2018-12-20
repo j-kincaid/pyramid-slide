@@ -5,7 +5,7 @@
 
 
 var heightElem = document.getElementById("height"); // from range input 
-var formElem = document.getElementById("controls");
+var formElem = document.getElementById("controls").value;
 
 
 // set a handler function for the form's submission event
@@ -41,7 +41,7 @@ function pyrChar() {
 
 
 // // set a handler function for the form's submission event
-formElem.onchange = function(event) {
+heightElem.onchange = function pyrChar(hash) {
         // // // QUIZ
         // // // what happens if we don't do this?
         event.preventDefault();
@@ -58,14 +58,13 @@ formElem.onchange = function(event) {
 // AS A REMINDER
 
 // var heightElem = document.getElementById("height"); // from range input 
-// var formElem = document.getElementById("controls");
+// var formElem = document.getElementById("controls").value;
 
-function drawPyramid(height, symbol) {
+function drawPyramid() {
 
-    document.getElementById("height").innerHTML = numSpaces;
-
-    rowElem = document.getElementById("height").value;
-    document.getElementById("pyramid").innerHTML = rowElem;
+    // document.getElementById("height").innerHTML = numSpaces;
+    rowElem = document.getElementById("symbol").value;
+    document.getElementById("pyramid").innerHTML = formElem;
 
     // for each row....
     for (var row = 0; row < height; row++) {
