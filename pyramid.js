@@ -4,9 +4,35 @@
 // pyramid-slide 
 
 
-var heightElem = document.getElementById("height").value; // from range input 
+var heightElem = document.getElementById("height"); // from range input 
 var formElem = document.getElementById("controls");
 
+
+// set a handler function for the form's submission event
+heightElem.oninput = function(event) {
+    // // // QUIZ
+    // // // what happens if we don't do this?
+    event.preventDefault();
+
+    // // // // QUIZ
+    // // // // what happens if we don't do this?
+    // clearError();
+
+    // // // figure out the height the user typed
+    heightStr = heightElem.value;
+
+
+    // // // convert the string to an int
+    height = parseInt(heightStr);
+
+
+    // draw pyramid with the specified height
+    drawPyramid(height);
+}
+
+//***************************** */
+// Changes brick symbol 
+//***************************** */
 
 function pyrChar() {
     var hash = document.getElementById("symbol").value;
@@ -14,13 +40,25 @@ function pyrChar() {
 }
 
 
-// set a handler function for the form's submission event
+// // set a handler function for the form's submission event
 formElem.onchange = function(event) {
+        // // // QUIZ
+        // // // what happens if we don't do this?
+        event.preventDefault();
+
+        // // // // QUIZ
+        // // // // what happens if we don't do this?
+        // clearError();
 
     }
     // Change characters in bricks menu
 
 // draw pyramid with the specified height
+
+// AS A REMINDER
+
+// var heightElem = document.getElementById("height"); // from range input 
+// var formElem = document.getElementById("controls");
 
 function drawPyramid(height, symbol) {
 
@@ -30,7 +68,7 @@ function drawPyramid(height, symbol) {
     document.getElementById("pyramid").innerHTML = rowElem;
 
     // for each row....
-    for (var rowElem = 0; rowElem < height; row++) {
+    for (var row = 0; row < height; row++) {
 
         // figure out number of bricks and spaces
         var numBricks = row + 2;
@@ -52,5 +90,7 @@ function drawPyramid(height, symbol) {
         document.getElementById("pyramid").appendChild(rowElem);
     }
 
+    // draw pyramid with the specified height
+    drawPyramid(height, symbol);
 
 }

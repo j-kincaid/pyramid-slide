@@ -5,6 +5,7 @@ JavaScript
 pyramid-slide 
 -->
 
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -22,11 +23,11 @@ pyramid-slide
                     `<select id="symbolSelect" onchange="findUserEntry(value)">` 
                     Your draw pyramid function needs to take in two variables. height and symbol -->
                     <label id="hash">Brick Symbol:
-                            <select id="symbol" onchange="pyrChar(symbol)">  <!-- This function will take the value from the range slider and calls the draw pyramid function with that number for height. It also finds what symbol the user has selected. So when it calls drawPyramid it calls it with `height` and `symbol` -->
-                                <option value="#">#
-                                <option value="@">@
-                                <option value="X">X
-                                <option value="$">$
+                            <select id="symbol" onchange="pyrChar(value)">  <!-- This function will take the value from the range slider and calls the draw pyramid function with that number for height. It also finds what symbol the user has selected. So when it calls drawPyramid it calls it with `height` and `symbol` -->
+                                <option value="#">#</option>
+                                <option value="@">@</option>
+                                <option value="X">X</option>
+                                <option value="$">$</option>
                             </select>
                         </label>
                     <label>How high?
