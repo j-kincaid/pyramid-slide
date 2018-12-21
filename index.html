@@ -23,7 +23,7 @@ pyramid-slide
                     `<select id="symbolSelect" onchange="findUserEntry(value)">` 
                     Your draw pyramid function needs to take in two variables. height and symbol -->
                     <label id="hash">Brick Symbol:
-                            <select id="symbol" onchange="pyrChar(value)">  <!-- This function will take the value from the range slider and calls the draw pyramid function with that number for height. It also finds what symbol the user has selected. So when it calls drawPyramid it calls it with `height` and `symbol` -->
+                            <select id="symbol" onchange="pyrChar()">  <!-- This function will take the value from the range slider and calls the draw pyramid function with that number for height. It also finds what symbol the user has selected. So when it calls drawPyramid it calls it with `height` and `symbol` -->
                                 <option value="#">#</option>
                                 <option value="@">@</option>
                                 <option value="X">X</option>
@@ -31,7 +31,7 @@ pyramid-slide
                             </select>
                         </label>
                     <label>How high?
-                            <span><b><input type="range" id="height" min="2" max="20" oninput="drawPyramid(value)"></b></span>
+                            <span><b><input type="range" id="height" min="2" max="20" oninput="rangeChange()"></b></span>
                             <!-- inside the range slider element in the html file, when user moves slider, onchange calls pyChar function. It is called with the current value of the range slider passed in. Then also on the range slider element there's an oninput that calls another function that updates the numbers of the range slider. -->
                         </label>
                 </nav>

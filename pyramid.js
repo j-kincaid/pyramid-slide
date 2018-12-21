@@ -9,29 +9,27 @@ var formElem = document.getElementById("controls").value;
 
 
 // set a handler function for the range slider
-heightElem.oninput = function(event) {
-
-    drawPyramid();
+function rangeChange() {
+    heightElem = document.getElementById("height").value;
+    drawPyramid(heightElem);
 }
 
 // // set a handler function for the form's submission event
-heightElem.onchange = function pyrChar() {
+function pyrChar() {
 
     event.preventDefault();
 
-    var hash = document.getElementById("symbol").value;
-    document.getElementById("pyramid").innerHTML = hash;
 
-    drawPyramid(hash);
+    drawPyramid(heightElem);
 }
 
-function drawPyramid(height, symbol) {
+function drawPyramid(height) {
 
-    // document.getElementById("height").innerHTML = numSpaces;
-    rowElem = document.getElementById("symbol").value;
-    document.getElementById("pyramid").innerHTML = formElem;
+    // first, clear the old content
+    document.getElementById("pyramid").innerHTML = "";
+
     mySymbol = document.getElementById("symbol").value;
-    rowStr = document.getElementById("height").value;
+
     // for each row....
     for (var row = 0; row < height; row++) {
 
@@ -56,6 +54,5 @@ function drawPyramid(height, symbol) {
     }
 
     // draw pyramid with the specified height
-    drawPyramid(rowStr, mySymbol);
 
 }

@@ -68,7 +68,8 @@ td {
     text-align: center;
 }
 
-.menu p {
+nav {
+    padding-top: 3em;
     padding-left: 3em;
     padding-right: 3em;
 }
