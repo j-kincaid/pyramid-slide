@@ -4,68 +4,34 @@
 // pyramid-slide 
 
 
-var heightElem = document.getElementById("height"); // from range input 
+var heightElem = document.getElementById("height").value; // from range input 
 var formElem = document.getElementById("controls").value;
 
 
-// set a handler function for the form's submission event
+// set a handler function for the range slider
 heightElem.oninput = function(event) {
-    // // // QUIZ
-    // // // what happens if we don't do this?
-    event.preventDefault();
 
-    // // // // QUIZ
-    // // // // what happens if we don't do this?
-    // clearError();
-
-    // // // figure out the height the user typed
-    heightStr = heightElem.value;
-
-
-    // // // convert the string to an int
-    height = parseInt(heightStr);
-
-
-    // draw pyramid with the specified height
-    drawPyramid(height);
+    drawPyramid();
 }
-
-//***************************** */
-// Changes brick symbol 
-//***************************** */
-
-function pyrChar() {
-    var hash = document.getElementById("symbol").value;
-    document.getElementById("pyramid").innerHTML = hash;
-}
-
 
 // // set a handler function for the form's submission event
-heightElem.onchange = function pyrChar(hash) {
-        // // // QUIZ
-        // // // what happens if we don't do this?
-        event.preventDefault();
+heightElem.onchange = function pyrChar() {
 
-        // // // // QUIZ
-        // // // // what happens if we don't do this?
-        // clearError();
+    event.preventDefault();
 
-    }
-    // Change characters in bricks menu
+    var hash = document.getElementById("symbol").value;
+    document.getElementById("pyramid").innerHTML = hash;
 
-// draw pyramid with the specified height
-
-// AS A REMINDER
-
-// var heightElem = document.getElementById("height"); // from range input 
-// var formElem = document.getElementById("controls").value;
+    drawPyramid(hash);
+}
 
 function drawPyramid(height, symbol) {
 
     // document.getElementById("height").innerHTML = numSpaces;
     rowElem = document.getElementById("symbol").value;
-    document.getElementById("pyramid").innerHTML = height.value;
+    document.getElementById("pyramid").innerHTML = formElem;
     mySymbol = document.getElementById("symbol").value;
+    rowStr = document.getElementById("height").value;
     // for each row....
     for (var row = 0; row < height; row++) {
 
@@ -90,6 +56,6 @@ function drawPyramid(height, symbol) {
     }
 
     // draw pyramid with the specified height
-    drawPyramid(height, symbol);
+    drawPyramid(rowStr, mySymbol);
 
 }
