@@ -60,12 +60,12 @@ heightElem.onchange = function pyrChar(hash) {
 // var heightElem = document.getElementById("height"); // from range input 
 // var formElem = document.getElementById("controls").value;
 
-function drawPyramid() {
+function drawPyramid(height, symbol) {
 
     // document.getElementById("height").innerHTML = numSpaces;
     rowElem = document.getElementById("symbol").value;
-    document.getElementById("pyramid").innerHTML = formElem;
-
+    document.getElementById("pyramid").innerHTML = height.value;
+    mySymbol = document.getElementById("symbol").value;
     // for each row....
     for (var row = 0; row < height; row++) {
 
@@ -80,7 +80,7 @@ function drawPyramid() {
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "#";
+            rowStr += mySymbol;
         }
 
         // make a <p> element for this row, and insert it into the #pyramid container
