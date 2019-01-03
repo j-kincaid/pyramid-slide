@@ -79,6 +79,9 @@ nav {
 
 div#pyramid {
     height: 50vw;
+    margin: 10%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
     background-color: whitesmoke;
     color: #c27099;
     line-height: 0;
