@@ -4,8 +4,17 @@
 // pyramid-slide 
 
 
+var rangeSlider = document.getElementById("height");
+var output = document.getElementById("count");
+output.innerHTML = rangeSlider.value;
+
+rangeSlider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
 var heightElem = document.getElementById("height").value; // from range input 
 var formElem = document.getElementById("controls").value;
+
 
 
 // set a handler function for the range slider
@@ -14,14 +23,6 @@ function rangeChange() {
     drawPyramid(heightElem);
 }
 
-// // set a handler function for the form's submission event
-function pyrChar() {
-
-    event.preventDefault();
-
-
-    drawPyramid(heightElem);
-}
 
 function drawPyramid(height) {
 
